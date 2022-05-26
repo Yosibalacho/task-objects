@@ -130,6 +130,89 @@
 //  userKey.mykey=prompt("enter key")
 //  userKey.myValue=prompt("enter value")
 //  console.log(userKey)
-                 //10//
-function numberOfDogs() {}
-numberOfDogs();
+//10//
+// function numberOfDogs() {}
+// var numFromUser = prompt("Enter Number");
+// for (var i = 0; i < numFromUser; i++) {
+//   var dog = {};
+//   dog.name = prompt("enter the dog name");
+//   dog.age = prompt("enter the dog age");
+//   dog.type = prompt("enter the dog type");
+//   dog.nameOfOwner = prompt("enter the dog owner");
+//   document.write(
+//     "<p>" +
+//       dog.name +
+//       " " +
+//       dog.age +
+//       " " +
+//       dog.type +
+//       " " +
+//       dog.nameOfOwner +
+//       "</p>"
+//   );
+// }
+// numberOfDogs();
+//11//
+// function bugs() {
+//     var numFromUser=prompt("enter number");
+//     for(var i=0;i<numFromUser;i++){
+//          var bug={}
+//          bug.regularName=prompt("enter the reguler name of the bug")
+//          bug.scientificName=prompt("enter the scientific name of the bug")
+//          bug.numOfLegs=prompt("enter the number of legs of the bug")
+//          bug.bugsWithWings=confirm("do the bug have wings")
+//          if(){
+
+//          }
+//     }
+// }
+// bugs()
+//14// לא מושלם//
+// function printTeachers(teachersNum) {
+//   for (var i = 0; i < teachersNum; i++) {
+//     var teacher = {
+//       fullName: "",
+//       salary: 100,
+//       email: "",
+//       birthYear: 1980,
+//     };
+//     if (teacher.salary > 100 || teacher.birthYear < 1990) {
+//       document.write(
+//         "<span>" +
+//           teacher.fullName +
+//           " " +
+//           teacher.salary +
+//           " " +
+//           teacher.email +
+//           " " +
+//           teacher.birthYear +
+//           "</span><br>"
+//       );
+//     }
+//   }
+// }
+// printTeachers(4);
+// לא מושלם//
+//15//
+function printAppartments(numberOfApartments) {
+  for (var i = 0; i < numberOfApartments; i++) {
+    var apartments = {
+      adress: prompt("Enter address"),
+      rentPrice: +prompt("Enter rent price"),
+      buyPrice: +prompt("Enter buy price"),
+      interstedPpl: [],
+      isTivuch: confirm("is it tivuch ?"),
+    };
+    var numberOfInterestedPpl = +prompt("Enter number of interested people");
+    for (var j = 0; j < numberOfInterestedPpl; j++) {
+      apartments.interstedPpl.push(prompt("Enter interested person"));
+    }
+    if (!apartments.isTivuch) {
+      document.write(apartments.adress + "<br>");
+      for (var j = 0; j < apartments.interstedPpl.length; j++) {
+        document.write(apartments.interstedPpl[j] + "<br>");
+      }
+    }
+  }
+}
+printAppartments();
