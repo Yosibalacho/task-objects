@@ -154,27 +154,35 @@
 // numberOfDogs();
 //11//
 // function bugs() {
-//     var numFromUser=prompt("enter number");
-//     for(var i=0;i<numFromUser;i++){
-//          var bug={}
-//          bug.regularName=prompt("enter the reguler name of the bug")
-//          bug.scientificName=prompt("enter the scientific name of the bug")
-//          bug.numOfLegs=prompt("enter the number of legs of the bug")
-//          bug.bugsWithWings=confirm("do the bug have wings")
-//          if(){
-
-//          }
+//   var numFromUser = prompt("enter number");
+//   for (var i = 0; i < numFromUser; i++) {
+//     var bug = {};
+//     bug.regularName = prompt("enter the reguler name of the bug");
+//     bug.scientificName = prompt("enter the scientific name of the bug");
+//     bug.numOfLegs = prompt("enter the number of legs of the bug");
+//     bug.bugsWithWings = confirm("do the bug have wings");
+//     if (bug.bugsWithWings == true) {
+//       document.write(
+//         "<h3>" +
+//           bug.regularName +
+//           " " +
+//           bug.scientificName +
+//           " " +
+//           bug.numOfLegs +
+//           "</h3>"
+//       );
 //     }
+//   }
 // }
-// bugs()
-//14// לא מושלם//
+// bugs();
+// 14//
 // function printTeachers(teachersNum) {
 //   for (var i = 0; i < teachersNum; i++) {
 //     var teacher = {
-//       fullName: "",
-//       salary: 100,
-//       email: "",
-//       birthYear: 1980,
+//       fullName: prompt("Enter full name"),
+//       salary: prompt("Enter your salary"),
+//       email: prompt("Enter your email"),
+//       birthYear: prompt("Enter your birth year"),
 //     };
 //     if (teacher.salary > 100 || teacher.birthYear < 1990) {
 //       document.write(
@@ -186,13 +194,13 @@
 //           teacher.email +
 //           " " +
 //           teacher.birthYear +
-//           "</span><br>"
+//           "</span>" +
+//           "<br>"
 //       );
 //     }
 //   }
 // }
-// printTeachers(4);
-// לא מושלם//
+// printTeachers(2);
 //15//
 function printAppartments(numberOfApartments) {
   for (var i = 0; i < numberOfApartments; i++) {
@@ -215,4 +223,4 @@ function printAppartments(numberOfApartments) {
     }
   }
 }
-printAppartments();
+printAppartments(2);
